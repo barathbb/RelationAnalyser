@@ -38,8 +38,7 @@ for(int i=0; i<10 ; i++) {
 
 <div class="onequestion">
 
-
-
+<div class="questioncontent"></div>
 
 </div>
 

@@ -57,7 +57,6 @@
 	font-weight:bold;
 }
 
-
 .onequestion
 {
 	height:95vh;
@@ -65,4 +64,12 @@
 	background-color:yellow;
 	margin-right:10px;
 	margin-left:10px;
+}
+
+.questioncontent
+{
+	width:750px;
+	height:30vh;
+	background-color:red;
+	margin:0 auto;
 }
