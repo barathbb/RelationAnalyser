@@ -5,4 +5,17 @@
 	width:1000px;
 	height:auto;
 	border:2px solid black;
+	margin:0 auto;
+}
+
+#questionindex
+{
+	float:left;
+	height:inherit;
+	width:200px;
+}
+
+#questions
+{
+	
 }
