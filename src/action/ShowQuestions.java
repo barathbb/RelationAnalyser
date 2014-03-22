@@ -56,9 +56,11 @@ public class ShowQuestions extends Action{
 			a.add(new Answer(rs2.getLong("QuestionIndex"),rs2.getLong("AnswerIndex"),rs2.getString("Answer")));
 		}
 		
+		qa = getQuestionAnswers(q, a);
 		
+		request.setAttribute("QA", qa);
 		
-	return null;
+		return mapping.findForward("success");
 	
 	}
 	
@@ -101,5 +103,4 @@ public class ShowQuestions extends Action{
 		
 	}
 	
-
 }

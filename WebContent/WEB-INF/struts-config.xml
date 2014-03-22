@@ -12,13 +12,14 @@
     </form-beans>
     
     <action-mappings>
-        <action path="/helloWorld" type="com.vaannila.action.HelloWorldAction" name="helloWorldForm">
-        	<forward name="success" path="/helloWorld.jsp" />
-        	<forward name="failure" path="error.jsp" />
-        </action> 
+        <action path="/showquestions" type="action.ShowQuestions" name="helloWorldForm">
+        	<forward name="success" path="/showtest.jsp" />
+        </action>
         <action path="/register" type="com.action.RegisterAction" name="registerBean">
         	<forward name="success" path="/success.jsp" />
         </action>  
+        
+        
     </action-mappings>
 
 </struts-config>
