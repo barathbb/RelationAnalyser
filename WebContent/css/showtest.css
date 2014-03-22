@@ -12,10 +12,19 @@
 {
 	float:left;
 	height:inherit;
-	width:200px;
+	width:150px;
+	background-color:red;
+	margin-left:10px;
+	margin-right:10px;
+	border: 3px ridge ghostwhite;
 }
 
 #questions
 {
-	
+	float:right;
+	height:inherit;
+	width:750px;
+	background-color:blue;
+	margin-left:10px;
+	margin-right:10px;
 }
