@@ -40,6 +40,8 @@ for(int i=0; i<10 ; i++) {
 
 <div class="questioncontent"></div>
 
+<div class="answercontent"> </div>
+
 </div>
 
 </div> 
