@@ -6,6 +6,12 @@ public class Question {
 	
 	private String question = null;
 
+	public Question(long qi, String q)
+	{
+		this.question = q;
+		this.questionindex = qi;
+	}
+	
 	public long getQuestionindex() 
 	{
 		return questionindex;

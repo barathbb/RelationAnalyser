@@ -8,6 +8,13 @@ public class Answer {
 	
 	private String answer = null;
 
+	public Answer(long questionindex, long answerindex, String answer) 
+	{
+		this.questionindex = questionindex;
+		this.answerindex = answerindex;
+		this.answer = answer;
+	}
+
 	public long getQuestionindex() 
 	{
 		return questionindex;
