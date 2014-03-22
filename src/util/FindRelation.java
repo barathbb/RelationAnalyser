@@ -70,7 +70,6 @@ public class FindRelation {
 		return score;
 	}
 	
-	
 	private static long getAbsoluteValue(long a, long b)
 	{
 		return a-b < 0L ? b-a : a-b ;

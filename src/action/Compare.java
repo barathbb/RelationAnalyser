@@ -14,7 +14,7 @@ import util.FindRelation;
 
 import bean.CompareBean;
 
-public class Compare extends Action{
+public class Compare extends Action {
 	
 	@Override
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
