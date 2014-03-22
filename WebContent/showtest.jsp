@@ -1,3 +1,4 @@
+<%@page import="util.AnswerTableGenerator"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -44,7 +45,9 @@ for(int i=0; i<10 ; i++) {
 
 <table id="answers">
 
-<jsp:include page="answersdisplay.jsp"></jsp:include>
+<%-- <jsp:include page="answersdisplay.jsp"></jsp:include> --%>
+
+<%=AnswerTableGenerator.generateAnswersHTML() %>
 
 </table>
 
