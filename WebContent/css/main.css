@@ -260,6 +260,12 @@ header.groove {border-style:groove;
 margin-right: 20px;
 margin-left: 20px;}
 
+.grooves
+{
+border-style:groove;
+margin-right: 30px;
+margin-left: 30px;
+}
 
 .steps
 {
