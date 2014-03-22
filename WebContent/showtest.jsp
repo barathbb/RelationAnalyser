@@ -42,6 +42,12 @@ for(int i=0; i<10 ; i++) {
 
 <div class="answercontent"> </div>
 
+<table id="answers">
+
+<jsp:include page="answersdisplay.jsp"></jsp:include>
+
+</table>
+
 </div>
 
 </div> 
