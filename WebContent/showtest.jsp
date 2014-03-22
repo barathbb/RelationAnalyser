@@ -16,7 +16,22 @@
  
 <div id="questionindex">
 
-hi
+
+
+<table id="qlinktable">
+
+<% 
+for(int i=0;i< 10 ; i++) {
+%>
+
+<tr class="qlink"><td> Hi </td></tr>
+
+<% } %>
+
+</table>
+
+
+
 </div> 
  
 

@@ -11,8 +11,8 @@
 #questionindex
 {
 	float:left;
-	height:inherit;
 	width:150px;
+	height:100vh;
 	background-color:red;
 	margin-left:10px;
 	margin-right:10px;
@@ -27,4 +27,16 @@
 	background-color:blue;
 	margin-left:10px;
 	margin-right:10px;
+}
+
+#qlinktable
+{
+	margin:0 auto;
+}
+
+.qlink
+{
+	width:100px;
+	border: 2px solid blue;
+	margin: 3px;
 }
