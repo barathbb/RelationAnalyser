@@ -29,7 +29,9 @@ public class Compare extends Action{
 	
 	Connection con = (Connection) request.getSession().getAttribute("Con");
 	
-	int result = FindRelation.findRelation(userid1, userid2, request.getSession());
+	long result = FindRelation.findRelation(userid1, userid2, request.getSession());
+	
+	request.setAttribute("Result", new Long(result));
 	
 	return mapping.findForward("success");
 	

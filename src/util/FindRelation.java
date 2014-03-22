@@ -10,12 +10,11 @@ import javax.servlet.http.HttpSession;
 
 public class FindRelation {
 
-	private static final int total = 100;
+	private static final long total = 100L;
 	
-	public static int findRelation(long userid1 , long userid2 , HttpSession session) throws Exception
+	public static long findRelation(long userid1 , long userid2 , HttpSession session) throws Exception
 	{
-		int score = total;
-		
+
 		Connection con = (Connection) session.getAttribute("Con");
 		
 		PreparedStatement pt1 = con.prepareStatement("select * from User_Answers where UserID =  ? ");
@@ -52,8 +51,29 @@ public class FindRelation {
 		
 		UserAnswers u2 = new UserAnswers(userid2, qtemp , atemp);
 		
+		return computeScore(u1, u2);
+	}
+	
+	private static long computeScore(UserAnswers u1, UserAnswers u2)
+	{
+		long score = total;
+		
+		List<Long> a1,a2;
+		
+		a1 = u1.getAindex();	a2 = u2.getAindex();
+		
+		for(int i = a1.size() ; i>=0 ;  i++)
+		{
+			score -= getAbsoluteValue( a1.get(i) , a2.get(i) );
+		}
 		
 		return score;
+	}
+	
+	
+	private static long getAbsoluteValue(long a, long b)
+	{
+		return a-b < 0L ? b-a : a-b ;
 	}
 	
 }
