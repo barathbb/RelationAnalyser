@@ -8,14 +8,23 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+import bean.CompareBean;
+
 public class Compare extends Action{
 	
 	@Override
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
-		// TODO Auto-generated method stub
-		return super.execute(mapping, form, request, response);
+
+	CompareBean cb = (CompareBean) form;
+	
+	long userid1 = 0L;
+	 
+	long userid2 = cb.getUserid();
+	
+	return mapping.findForward("success");
+	
 	}
 
 }

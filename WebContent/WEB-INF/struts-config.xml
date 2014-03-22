@@ -23,7 +23,6 @@
         	<forward name="success" path="/success.jsp" />
         </action>  
         
-        
     </action-mappings>
 
 </struts-config>
