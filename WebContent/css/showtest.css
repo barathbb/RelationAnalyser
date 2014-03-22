@@ -81,3 +81,16 @@
 	background-color:blue;
 	margin:0 auto;
 }
+
+#answers tr td
+{
+	border:2px solid green;
+	height:inherit;
+	width:300px;
+}
+
+#answers tr
+{
+	height:15vh;
+	width:750px;
+}

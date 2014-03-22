@@ -47,7 +47,7 @@ for(int i=0; i<10 ; i++) {
 
 <%-- <jsp:include page="answersdisplay.jsp"></jsp:include> --%>
 
-<%=AnswerTableGenerator.generateAnswersHTML() %>
+<% out.write(AnswerTableGenerator.generateAnswersHTML(10)); %>
 
 </table>
 
