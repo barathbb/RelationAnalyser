@@ -21,10 +21,10 @@
 <table id="qlinktable">
 
 <% 
-for(int i=0;i< 10 ; i++) {
+for(int i=0; i<10 ; i++) {
 %>
 
-<tr class="qlink"><td> Hi </td></tr>
+<tr class="qlink"><td> <%=i+1 %> </td></tr>
 
 <% } %>
 
