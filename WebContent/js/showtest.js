@@ -5,6 +5,7 @@ $(document).ready(function()
 		});
 
 
+
 function bindfunctions()
 {
 	$('body').find('#qlinktable').find('tr').each(function(){

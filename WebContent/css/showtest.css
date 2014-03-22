@@ -15,7 +15,7 @@
 	height:100vh;
 	background-color:red;
 	margin-left:10px;
-	margin-right:10px;
+/* 	margin-right:10px; */
 /* 	border: 3px ridge ghostwhite; */
 }
 
@@ -23,7 +23,7 @@
 {
 	float:right;
 	height:inherit;
-	width:750px;
+	width:820px;
 	background-color:blue;
 	margin-left:10px;
 	margin-right:10px;
@@ -36,16 +36,16 @@
 
 .qlinkrow
 {
-	width:100px;
+	width:95px;
 	height:9vh;
-	margin:3px;
+/* 	margin:3px; */
 }
 
 .qlinkcell
 {
 	width:4vw;
 	border:2px solid blue;
-	margin:10px;
+/* 	margin:10px; */
 	font-family:"Segoe UI";
 	font-size:30px;
 }
@@ -55,4 +55,14 @@
 	margin-left:12px;
 	display:block;
 	font-weight:bold;
+}
+
+
+.onequestion
+{
+	height:95vh;
+	width:800px;
+	background-color:yellow;
+	margin-right:10px;
+	margin-left:10px;
 }
