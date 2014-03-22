@@ -87,10 +87,11 @@
 	border:2px solid green;
 	height:inherit;
 	width:300px;
+	padding-left:20px;
 }
 
 #answers tr
 {
-	height:15vh;
+	height:7vh;
 	width:750px;
 }

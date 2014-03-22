@@ -1,4 +1,3 @@
-<%@page import="util.AnswerTableGenerator"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -41,46 +40,51 @@ for(int i=0; i<10 ; i++) {
 
 <div class="questioncontent"></div>
 
-<div class="answercontent"> </div>
+<div class="answercontent"> 
 
 <table id="answers">
 
 <tr>
-<td class="" id="1">
+<td class="" id="1">	<input type="radio" value=""  />
 </td>
-<td class="" id="2">
-</td>
-</tr>
-
-<tr>
-<td class="" id="3">
-</td>
-<td class="" id="4">
+<td class="" id="2">	<input type="radio" value=""  />
 </td>
 </tr>
 
 <tr>
-<td class="" id="5">
+<td class="" id="3">	<input type="radio" value=""  />
 </td>
-<td class="" id="6">
-</td>
-</tr>
-
-<tr>
-<td class="" id="7">
-</td>
-<td class="" id="8">
+<td class="" id="4">	<input type="radio" value=""  />
 </td>
 </tr>
 
 <tr>
-<td class="" id="9">
+<td class="" id="5">	<input type="radio" value=""  />
 </td>
-<td class="" id="10">
+<td class="" id="6">	<input type="radio" value="" />
+</td>
+</tr>
+
+<tr>
+<td class="" id="7">	<input type="radio" value=""  />
+</td>
+<td class="" id="8">	<input type="radio" value=""  />
+</td>
+</tr>
+
+<tr>
+<td class="" id="9">	<input type="radio" value=""  />
+</td>
+<td class="" id="10">	<input type="radio" value=""  />
 </td>
 </tr>
 
 </table>
+
+
+</div>
+
+
 
 </div>
 
