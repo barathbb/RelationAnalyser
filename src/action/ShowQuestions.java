@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,7 +34,7 @@ public class ShowQuestions extends Action{
 		
 		pt2 = con.prepareStatement("select * from Answers");
 		
-		List<QuestionAnswers> qa = new ArrayList<QuestionAnswers>();
+		List<QuestionAnswers> qa = null;
 		
 		List<Question> q = new ArrayList<Question>();
 		
@@ -52,14 +53,53 @@ public class ShowQuestions extends Action{
 		
 		while(rs2.next())
 		{
-			a.add(new Answer());
+			a.add(new Answer(rs2.getLong("QuestionIndex"),rs2.getLong("AnswerIndex"),rs2.getString("Answer")));
 		}
 		
 		
-				
 		
 	return null;
 	
 	}
+	
+	private List<QuestionAnswers> getQuestionAnswers(List<Question> q, List<Answer> a)
+	{
+		List<QuestionAnswers> qa = new ArrayList<QuestionAnswers>();
+		
+		QuestionAnswers qatemp = null;	Question qtemp=null; Answer atemp = null; List<String> answerlist = null;
+		
+		Iterator<Question> qi = q.listIterator();
+		
+		Iterator<Answer> ai = null;
+		
+		while(qi.hasNext())
+		{
+			qtemp = qi.next();
+			
+			qatemp = new QuestionAnswers();
+			
+			qatemp.setQuestion(qtemp.getQuestion());
+			
+			answerlist = new ArrayList<String>();
+			
+			ai = a.listIterator();
+			
+			while(ai.hasNext())
+			{
+				atemp = ai.next();
+				
+				if(atemp.getQuestionindex() == qtemp.getQuestionindex())
+					answerlist.add(new String(atemp.getAnswer()));
+			}
+			
+			qatemp.setAnswers(answerlist);
+			
+			qa.add(qatemp);
+		}
+		
+		return qa;
+		
+	}
+	
 
 }
