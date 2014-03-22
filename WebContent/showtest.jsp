@@ -8,15 +8,17 @@
 
 <link rel="stylesheet" type="text/css" href="css/showtest.css" />
 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/showtest.js"></script>
+
 </head>
+
 <body>
 
 <div id="all">
-
  
 <div id="questionindex">
-
-
 
 <table id="qlinktable">
 
@@ -24,13 +26,11 @@
 for(int i=0; i<10 ; i++) {
 %>
 
-<tr class="qlinkrow"><td class="qlinkcell"> <%=i+1 %> </td></tr>
+<tr class="qlinkrow"><td class="qlinkcell" id="<%=i+1%>"> <span class="qnumber" align="Center"> <%=i+1 %> </span> </td></tr>
 
 <% } %>
 
 </table>
-
-
 
 </div> 
  
@@ -42,7 +42,6 @@ kj
 </div> 
 
 </div>
-
 
 </body>
 </html>

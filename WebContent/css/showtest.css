@@ -46,4 +46,13 @@
 	width:4vw;
 	border:2px solid blue;
 	margin:10px;
+	font-family:"Segoe UI";
+	font-size:30px;
+}
+
+.qnumber
+{
+	margin-left:12px;
+	display:block;
+	font-weight:bold;
 }
