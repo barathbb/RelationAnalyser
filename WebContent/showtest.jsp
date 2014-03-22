@@ -45,9 +45,40 @@ for(int i=0; i<10 ; i++) {
 
 <table id="answers">
 
-<%-- <jsp:include page="answersdisplay.jsp"></jsp:include> --%>
+<tr>
+<td class="" id="1">
+</td>
+<td class="" id="2">
+</td>
+</tr>
 
-<% out.write(AnswerTableGenerator.generateAnswersHTML(10)); %>
+<tr>
+<td class="" id="3">
+</td>
+<td class="" id="4">
+</td>
+</tr>
+
+<tr>
+<td class="" id="5">
+</td>
+<td class="" id="6">
+</td>
+</tr>
+
+<tr>
+<td class="" id="7">
+</td>
+<td class="" id="8">
+</td>
+</tr>
+
+<tr>
+<td class="" id="9">
+</td>
+<td class="" id="10">
+</td>
+</tr>
 
 </table>
 
