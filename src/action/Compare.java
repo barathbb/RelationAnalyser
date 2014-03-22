@@ -1,5 +1,7 @@
 package action;
 
+import java.sql.Connection;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -7,6 +9,8 @@ import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+
+import util.FindRelation;
 
 import bean.CompareBean;
 
@@ -22,6 +26,10 @@ public class Compare extends Action{
 	long userid1 = 0L;
 	 
 	long userid2 = cb.getUserid();
+	
+	Connection con = (Connection) request.getSession().getAttribute("Con");
+	
+	int result = FindRelation.findRelation(userid1, userid2, con);
 	
 	return mapping.findForward("success");
 	
