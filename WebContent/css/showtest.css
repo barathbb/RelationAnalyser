@@ -73,3 +73,11 @@
 	background-color:red;
 	margin:0 auto;
 }
+
+.answercontent
+{
+	width:750px;
+	height:60vh;
+	background-color:blue;
+	margin:0 auto;
+}
