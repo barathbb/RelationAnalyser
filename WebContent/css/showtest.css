@@ -34,10 +34,16 @@
 	margin:0 auto;
 }
 
-.qlink
+.qlinkrow
 {
 	width:100px;
 	height:9vh;
-	border:2px solid blue;
 	margin:3px;
+}
+
+.qlinkcell
+{
+	width:4vw;
+	border:2px solid blue;
+	margin:10px;
 }

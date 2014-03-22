@@ -24,7 +24,7 @@
 for(int i=0; i<10 ; i++) {
 %>
 
-<tr class="qlink"><td> <%=i+1 %> </td></tr>
+<tr class="qlinkrow"><td class="qlinkcell"> <%=i+1 %> </td></tr>
 
 <% } %>
 
