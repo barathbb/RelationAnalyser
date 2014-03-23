@@ -9,14 +9,11 @@
 
 Class.forName("com.mysql.jdbc.Driver");
 
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/relationanalyser", "root" , "mysql"); 
-
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/relationanalayser", "root" , "mysql"); 
 
 session.setAttribute("Con", con);
 
-
 %>
-
 
 <html>
     <head>
