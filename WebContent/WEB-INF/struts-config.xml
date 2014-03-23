@@ -9,6 +9,7 @@
     <form-beans>
     	<form-bean name="helloWorldForm" type="com.vaannila.form.HelloWorldForm"/>
     	<form-bean name="compareBean" type="bean.CompareBean"/>
+    	<form-bean name="addUserBean" type="bean.AddUserBean"/>
     </form-beans>
     
     <action-mappings>
@@ -17,6 +18,9 @@
         </action>
         <action path="/compare" type="action.Compare" name="compareBean">
         	<forward name="success" path="/compareresult.jsp" />
+        </action>
+        <action path="/adduser" type="action.AddUser" name="addUserBean">
+        	<forward name="success" path="/page.jsp" />
         </action>
         
         <action path="/register" type="com.action.RegisterAction" name="registerBean">

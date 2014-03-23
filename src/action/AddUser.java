@@ -1,5 +1,6 @@
 package action;
 
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,30 +24,40 @@ public class AddUser extends Action {
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
 		
-		AddUserBean adb = (AddUserBean) form;
+		try {
 		
-		Connection con = (Connection) request.getSession().getAttribute("Con");
+//		AddUserBean adb = (AddUserBean) form;
 		
-		
-		PreparedStatement pt1 = con.prepareStatement("select * from users where userid = ?");
-		pt1.setLong(1, adb.getId());
-		
-		ResultSet rs = pt1.executeQuery();
-		
-		 
-		
-		if(!rs.last())
-		{
-			pt1 = con.prepareStatement(" insert into users values (? , ? )");
-			pt1.setLong(1, adb.getId());
-			pt1.setString(2, adb.getName());
-			
-			pt1.executeUpdate();
-		}
+//		Connection con = (Connection) request.getSession().getAttribute("Con");
+//		
+//		PreparedStatement pt1 = con.prepareStatement("select * from users where userid = ?");
+//		pt1.setLong(1, adb.getId());
+//		
+//		ResultSet rs = pt1.executeQuery();
+//		
+//		if(!rs.last())
+//		{
+//			pt1 = con.prepareStatement(" insert into users values (? , ? )");
+//			pt1.setLong(1, adb.getId());
+//			pt1.setString(2, adb.getName());
+//			
+//			pt1.executeUpdate();
+//		}
 
-		request.getSession().setAttribute("User", new SessionedUser(adb.getId() , adb.getName()));
+//		request.getSession().setAttribute("User", new SessionedUser(adb.getId() , adb.getName()));
 		
 		return mapping.findForward("success");
+		
+		}
+		
+		catch(Exception e)
+		{
+			PrintWriter out = response.getWriter();
+			
+			out.write(e.getMessage());
+			
+			return null;
+		}
 	}
 
 }

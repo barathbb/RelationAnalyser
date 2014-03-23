@@ -6,9 +6,9 @@ public class AddUserBean extends ActionForm {
 
 	private static final long serialVersionUID = 1L;
 
-	private long id;
+	private long id = 0L;
 	
-	private String name;
+	private String name = "";
 
 	public long getId() {
 		return id;

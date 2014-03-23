@@ -15,6 +15,7 @@ session.setAttribute("Con", con);
 
 %>
 
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -80,16 +81,20 @@ session.setAttribute("Con", con);
       console.log('Good to see you, ' + response.name + '.');
 	alert ("Welcome " + response.name + ": Your UID is " + response.id);
 	
-	var request = $.ajax({
-	  url: "adduser.do",
-	  type: "POST",
-	  data: { name : response.name , id : response.id },
-	  dataType: "html"
-	});
-	 
-	request.done(function( msg ) {
-	  alert("Inserted");
-	});
+	
+var request = new XMLHttpRequest();
+	
+	query = "adduser.do?name="+response.name+"&id="+response.id;
+	
+	request.open("POST",query,true);
+	
+	request.onreadystatechange = function()
+	{
+		alert(request.responseText);
+	}
+	
+	request.send();
+	
 	
     });
   }
