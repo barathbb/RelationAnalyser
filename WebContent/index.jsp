@@ -48,9 +48,9 @@ session.setAttribute("Con", con);
   window.fbAsyncInit = function() {
   FB.init({
     appId      : 415379798504901,
-    status     : true, // check login status
-    cookie     : true, // enable cookies to allow the server to access the session
-    xfbml      : true  // parse XFBML
+    status     : true,  
+    cookie     : true,  
+    xfbml      : true   
   });
 
   FB.Event.subscribe('auth.authResponseChange', function(response) {
@@ -81,10 +81,9 @@ session.setAttribute("Con", con);
       console.log('Good to see you, ' + response.name + '.');
 	alert ("Welcome " + response.name + ": Your UID is " + response.id);
 	
-	
 var request = new XMLHttpRequest();
 	
-	query = "adduser.do?name="+response.name+"&id="+response.id;
+	query = "adduser.do?id="+response.id+"name="+response.name;
 	
 	request.open("POST",query,true);
 	
@@ -94,7 +93,6 @@ var request = new XMLHttpRequest();
 	}
 	
 	request.send();
-	
 	
     });
   }
