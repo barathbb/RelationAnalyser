@@ -1,7 +1,7 @@
 RelationAnalyser
 ================
 
-This is the project which has been created for the Save the Hacker contest conducted by Freshdesk at College of Engineering, Anna Univeristy, Guindy.
+This is the project which has been created for the Save the Hacker contest at College of Engineering, Anna Univeristy, Guindy.
 
 This is purley a Web application which is used to analyse Human with the help of their behavior.
 
